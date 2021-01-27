@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  body, html{
+    resize: both;
+    overflow: auto;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    background-image: url("pics/Terek.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: maroon;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+a.active{
+	background-color: black;
+	color: white;
+}
+</style>
+
+<body>
+  <ul>
+    <li><a class = "active" href="#home" onclick="Index()">Home</a></li>
+      <li><a href="#about" onclick="About()">About</a></li>
+      <li><a href="#news" onclick="Skills()">Skills</a></li>
+    <li><a href="#activities" onclick="Education()">Education</a></li>
+  </ul>
+
+<script>
+  function Index(){
+  location.replace("index.html")}
+
+  function About(){
+  location.replace("about.html")}
+  
+  function Skills(){
+  location.replace("skills.html")}
+
+  function Education(){
+  location.replace("education.html")}
+</script>
+
+</body>
+</html>

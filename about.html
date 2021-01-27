@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  body, html{
+    resize: both;
+    overflow: auto;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    background-image: url("pics/Terek.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: maroon;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+  }
+
+  .content{
+    color: white;
+    background-color: #0d0d0d;
+    margin-left: 100px;
+    margin-right: 220px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    opacity: 95%;
+    color: white;
+    font-size: 23px;
+    border-radius: 25px;
+  }
+
+  a.active{
+  background-color: black;
+  color: white;
+}
+</style>
+
+<body>
+  <ul>
+    <li><a href="#home" onclick="Index()">Home</a></li>
+      <li><a class = "active" href="#about" onclick="About()">About</a></li>
+      <li><a href="#news" onclick="Skills()">Skills</a></li>
+    <li><a href="#activities" onclick="Education()">Education</a></li>
+  </ul>
+
+  <div class="content">
+  <img src="pics/Yeye.jpg" align="left" height="750px" width="530">
+    <h1>About Myself</h1>
+  <hr>
+    <h2>Terek Ivan Trinidad </h2>
+      <p>Address: 131 Central Fairview, Baguio City </p>
+      <p>Birthday: January 11, 2000 </p>
+      <p>Gender: Male</p>
+      <p>Nationality: Filipino</p>
+      <p>Religion: Catholic</p>
+      <p>Age: 21 </p>
+      <p>Email: terekyeye@gmail.com </p>
+      <p>Phone: 09395656180</p>
+      <p>Siblings: 4</p>
+      <p>Language Spoken: English, Tagalog, Ilocano</p>
+      <p>Facebook: Terek Trinidad </p>
+  </div>
+    <p></p>
+  <div class="content">
+    <h1>Career Objective</h1>
+  <hr>
+      <p>To secure a responsible career opportunity to fully utilize my training and skills, </p>
+      <p>while making a significant contribution to the success of the company and to expand my learnings, knowledge, and skills. </p>
+  </div>
+
+<script>
+  function Index(){
+  location.replace("index.html")}
+
+  function About(){
+  location.replace("about.html")}
+  
+  function Skills(){
+  location.replace("skills.html")}
+
+  function Education(){
+  location.replace("education.html")}
+</script>
+
+</body>
+</html>
